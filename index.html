@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <title>Password Generator </title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title title-white-text">Generate a <br> <span class="title-green-text">random password</span></h1>
+        <p class="sub-title">Never use an insecure password again.</p>
+    
+        <div class="input-fields">
+
+            <form id="input-form-el">
+
+                <div class="input-form">
+
+                    <span class="text-label">Numbers</span>
+                    <label class="switch">
+                        <input  id="numbers-checkbox" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <span class="text-label">Symbols</span>
+                    <label class="switch">
+                        <input id="symbols-checkbox"  type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <label class="text-label"  for="flength">Length:</label>
+                    <input  class="input-length" type="number" min="1" max="20" id="flength" name="flength" required><br>
+                    
+
+                </div>
+            
+                <button type="submit" id="generate-passwords-el" class="generate-passwords-btn">Generate passwords</button>
+
+            </form>
+
+        </div>
+
+        
+        <div class="divider"></div>
+
+        <div class="passwords">
+            <div id="first-password-el" class="password-field"></div>
+            <div id="second-password-el" class="password-field"></div>
+        </div>
+
+        <div class="copy-passwords passwords ">
+            <button id="copy-first-password-el" class="copy-button" >copy</button>
+            <button id="copy-second-password-el" class="copy-button">copy</button>
+        </div>
+        
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>
